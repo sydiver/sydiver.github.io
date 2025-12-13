@@ -1,3 +1,13 @@
+header:
+  - title: Home
+    url: /
+  - title: Archive
+    url: /archive.html
+  - title: Projects
+    url: /projects/
+  - title: About
+    url: /about.html
+
 subjects:
   - title: "선형대수학"
     children:
