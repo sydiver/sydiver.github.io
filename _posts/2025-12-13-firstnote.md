@@ -9,11 +9,13 @@ mathjax_autoNumber: true
 
 테스트 글입니다.
 
-$E = mc^2$
+$$E = mc^2$$
 
 $$
  \nabla \cdot \mathbf{u} = 0
 $$
+
+![caption test test](_/assets/images/videoframe_1880.png)
 
 ## 대제목
 ## 중제목
