@@ -9,7 +9,7 @@ timezone: Asia/Seoul
 
 markdown: kramdown
 kramdown:
-  math_engine:mathjax
+  math_engine: mathjax
   
 future: true
 # If you want the exact TeXt look without copying all theme files:
