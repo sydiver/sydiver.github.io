@@ -15,7 +15,14 @@ $$
  \nabla \cdot \mathbf{u} = 0
 $$
 
-![caption test test](/assets/images/videoframe_1880.png)
+
+사진위에 글 잘 써지나
+<p align="center">
+  <img src="/assets/images/videoframe_1880.png" alt="설명" style="width:70%;">
+</p>
+
+사진 아래 글 잘 써지나
+
 
 ## 대제목
 ## 중제목
