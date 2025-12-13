@@ -1,0 +1,42 @@
+# =============================
+# Site settings
+# =============================
+title: "Sungyoon's Notes"
+description: >-
+  Research notes, experiments, and CFD (OpenFOAM) 기록.
+lang: ko
+timezone: Asia/Seoul
+
+# If you want the exact TeXt look without copying all theme files:
+# GitHub Pages supports `remote_theme` (builds server-side).
+remote_theme: kitian616/jekyll-TeXt-theme
+
+# Visual options
+text_skin: default
+highlight_theme: default
+
+# Enable MathJax (LaTeX) + auto numbering (good for paper-style notes)
+mathjax: true
+mathjax_autoNumber: true
+
+# Optional extras
+mermaid: true
+chart: true
+
+# Pagination for posts on the home page
+paginate: 8
+paginate_path: /page:num
+
+# So the theme can generate "Edit on GitHub" links (optional)
+# Change these two to match your repo.
+repository: YOUR_GITHUB_ID/YOUR_GITHUB_ID.github.io
+repository_tree: main
+
+plugins:
+  - jekyll-paginate
+
+# Ignore build junk
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
