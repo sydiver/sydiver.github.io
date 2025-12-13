@@ -13,8 +13,8 @@ subjects:
     children:
       - title: "Index"
         url: /linear-algebra/
-      - title: "Eigenvalues"
-        url: /linear-algebra/eigen/
+      - title: "First Note111"
+        url: /linear-algebra/firstnote/
 
   - title: "복소해석학"
     children:
