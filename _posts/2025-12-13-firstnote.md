@@ -1,11 +1,10 @@
 ---
 layout: article
-title: "첫 글"
+title: "Test 123"
 date: 2025-12-13 03:00:00 +0900
 tags: [note, math]
 mathjax: true
 mathjax_autoNumber: true
-future: true
 ---
 
 테스트 글입니다.
@@ -13,7 +12,7 @@ future: true
 $E = mc^2$
 
 $$
- \nabla \cdot \mathbf{{u}} = 0
+ \nabla \cdot \mathbf{u} = 0
 $$
 
 ##대제목
