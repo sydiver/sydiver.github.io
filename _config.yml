@@ -10,6 +10,11 @@ timezone: Asia/Seoul
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+
   
 future: true
 # If you want the exact TeXt look without copying all theme files:
