@@ -1,9 +1,22 @@
-header:
-  - title:      Home
-    url:        /
-  - title:      Archive
-    url:        /archive.html
-  - title:      Projects
-    url:        /projects.html
-  - title:      About
-    url:        /about.html
+subjects:
+  - title: "선형대수학"
+    children:
+      - title: "Index"
+        url: /linear-algebra/
+      - title: "Eigenvalues"
+        url: /linear-algebra/eigen/
+
+  - title: "복소해석학"
+    children:
+      - title: "Index"
+        url: /complex-analysis/
+
+  - title: "미분기하학"
+    children:
+      - title: "Index"
+        url: /differential-geometry/
+
+  - title: "C++"
+    children:
+      - title: "Index"
+        url: /cpp/
