@@ -1,9 +1,9 @@
 # =============================
 # Site settings
 # =============================
-title: "Sungyoon's Notes"
+title: "유체노트"
 description: >-
-  Research notes, experiments, and CFD (OpenFOAM) 기록.
+  Engineering math, Fluid Dynamics and CFD (OpenFOAM) 기록.
 lang: ko
 timezone: Asia/Seoul
 
