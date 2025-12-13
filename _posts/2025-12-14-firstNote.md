@@ -12,7 +12,7 @@ mathjax_autoNumber: true
 $E = mc^2$
 
 $$
- \nabla \cdot \mathbf{u}} = 0
+ \nabla \cdot \mathbf{{u}} = 0
 $$
 
 ##대제목
