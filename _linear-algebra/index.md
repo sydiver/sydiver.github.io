@@ -7,4 +7,4 @@ sidebar:
 mathjax: true
 ---
 
-- [First Note](/linear-algebra/firstnote/)
+- [First Note111](/linear-algebra/firstnote/)
