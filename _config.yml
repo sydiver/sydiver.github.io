@@ -7,6 +7,10 @@ description: >-
 lang: ko
 timezone: Asia/Seoul
 
+markdown: kramdown
+kramdown:
+  math_engine:mathjax
+  
 future: true
 # If you want the exact TeXt look without copying all theme files:
 # GitHub Pages supports `remote_theme` (builds server-side).
