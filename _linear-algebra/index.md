@@ -1,11 +1,10 @@
 ---
 title: "선형대수학"
 permalink: /linear-algebra/
-layout: single
+layout: article
 sidebar:
   nav: subjects
 mathjax: true
 ---
 
-선형대수학 목차 페이지.
-- [Eigenvalues & Eigenvectors](/linear-algebra/eigen/)
+- [First Note](/linear-algebra/firstnote/)
