@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "첫 글"
-date: 2025-12-14 21:00:00 +0900
+date: 2025-12-14 03:00:00 +0900
 tags: [note, math]
 mathjax: true
 mathjax_autoNumber: true
