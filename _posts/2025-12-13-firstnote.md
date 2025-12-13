@@ -15,7 +15,7 @@ $$
  \nabla \cdot \mathbf{u} = 0
 $$
 
-![caption test test](_/assets/images/videoframe_1880.png)
+![caption test test](/assets/images/videoframe_1880.png)
 
 ## 대제목
 ## 중제목
