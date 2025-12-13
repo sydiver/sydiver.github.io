@@ -47,6 +47,6 @@ exclude:
   - Gemfile.lock
 
 collections:
-linear-algebra:
-  output: true
-  permalink: /linear-algebra/:path/
+  linear-algebra:
+    output: true
+    permalink: /linear-algebra/:path/
