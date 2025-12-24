@@ -489,7 +489,7 @@ $$
 $\delta_{ij}$의 정의와 **정확히 같습니다**.
 
 따라서 
-$$\hat{e_i} \cdot \hat{e_j} = delta_{ij}$$ 입니다.
+$$\hat{e_i} \cdot \hat{e_j} = \delta_{ij}$$ 입니다.
 
 결국 우리의 목적이었던 divergence 연산은
 
@@ -513,7 +513,7 @@ $$\nabla \cdot \mathbf{u} = \frac {\partial u_j} {\partial x_j}$$
 
 헷갈린다면 dummy index를 직접 전개해 보시길 바랍니다.
 
-보통 편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = x_j,j $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
+보통 편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = x_{j,j} $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
 
 ### 6.2) Cross product 
 
@@ -536,27 +536,59 @@ $$
 
 
 ### 6.3) Curl
-
-
-
-
-
-
-
-### 3) Scalar triple product (스칼라 삼중곱)
+이번에도 그냥 정의대로 쭉 붙여서 쓰면 됩니다.
 
 $$
-\vec a\cdot(\vec b\times \vec c)
-= \varepsilon_{ijk} a_i b_j c_k.
+\nabla \times \vec{u} 
+=  (\hat{e_j} \frac{\partial } {\partial x_j})   \times  (u_k \hat{e_k})
 $$
+
+>> 여기서 j,k는 모두 dummy index입니다.
+
+$$
+ = \frac {\partial u_k} {\partial x_j} \hat{e_j} \times \hat{e_k}
+ = \varepsilon_{ijk} u_{k,j} \hat{e_i}
+ $$
+
+ 마찬가지로 헷갈리신다면 직접 전개해 보시길 추천드립니다.
+
+
+### 6.4) Gradient
+
+0차텐서(스칼라) $Phi$에 대하여
+gradient $Phi$는
+
+
+$$
+\nabla \Phi = (\hat{e_j} \frac{\partial } {\partial x_j}) \Phi
+=  \frac {\Phi} {\partial x_j} \hat{e_j}
+ = \Phi,j
+$$
+
+0차텐서를 편미분 했더니 1차텐서가 되었습니다.
+
+**n차 텐서의 편미분은 (n+1)차 텐서가 된다**는 것을 증명없이 받아들입시다.
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
-## Kronecker delta와 permutation tensor의 핵심 항등식
+## 7. Kronecker delta와 permutation tensor의 핵심 항등식
+
+이제 진짜 거의 다 왔습니다. 
 
 아래 항등식은 외적/컬 계산을 “마법처럼” 단순화해 줍니다.
 
-### 1) 한 번 수축한 항등식
+### 7.1) 한 번 수축한 항등식
 
 $$
 \varepsilon_{ijk}\varepsilon_{imn}
@@ -566,7 +598,7 @@ $$
 
 (가장 자주 쓰는 형태입니다. 외적-외적 전개할 때 거의 무조건 나옵니다.)
 
-### 2) 두 번 수축한 항등식
+### 7.2) 두 번 수축한 항등식
 
 $$
 \varepsilon_{ijk}\varepsilon_{ijn}
