@@ -14,8 +14,10 @@ notes:
       - title: "Index"
         url: /complex-analysis/
 
+notes:
   - title: "Tensor"
     children:
       - title: "Index"
         url: /tensor/
-
+      - title: "Introduction"
+        url: /tensor/introduction-to-tensor/
