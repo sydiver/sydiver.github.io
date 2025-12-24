@@ -129,15 +129,52 @@ $$
 > 주의: 이 $n^r$은 “모든 성분을 독립적으로 셌을 때”의 개수입니다.  
 > 대칭/반대칭 같은 제약이 있으면 독립 성분 수는 더 줄어듭니다.
 
-예를 들어 3차원에서 $\mathbf{x}=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}$, $\mathbf{A}=\begin{bmatrix}A_{11}&A_{12}&A_{13}\\A_{21}&A_{22}&A_{23}\\A_{31}&A_{32}&A_{33}\end{bmatrix}$라 두면,
-$\mathbf{y}=\mathbf{A}\mathbf{x}$는
-$\begin{bmatrix}y_1\\y_2\\y_3\end{bmatrix}
+예를 들어 3차원에서 $\mathbf{y}=\mathbf{A}\mathbf{x}$를 생각해 봅시다.
+여기서 $\mathbf{A}$는 2차텐서 $A_ij$이고 $\mathbf{x}$는 1차텐서(벡터)인 $x_j$입니다.
+텐서 표기법에서는 벡터표기법에서 흔히 쓰는 bold체를 쓰지 않고도 벡터와 행렬을 표기함에 주의하시기 바랍니다!!
+
+$$
+\mathbf{x}=
+\begin{bmatrix}
+x_1\\x_2\\x_3
+\end{bmatrix},\qquad
+\mathbf{A}=
+\begin{bmatrix}
+A_{11}&A_{12}&A_{13}\\
+A_{21}&A_{22}&A_{23}\\
+A_{31}&A_{32}&A_{33}
+\end{bmatrix},\qquad
+\mathbf{y}=
+\begin{bmatrix}
+y_1\\y_2\\y_3
+\end{bmatrix}.
+$$
+
+그러면
+
+$$
+\mathbf{y}=\mathbf{A}\mathbf{x}
+\quad\Longleftrightarrow\quad
+\begin{bmatrix}
+y_1\\y_2\\y_3
+\end{bmatrix}
 =
-\begin{bmatrix}A_{11}&A_{12}&A_{13}\\A_{21}&A_{22}&A_{23}\\A_{31}&A_{32}&A_{33}\end{bmatrix}
-\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}$
-이고, 성분으로 쓰면
-$y_1=A_{11}x_1+A_{12}x_2+A_{13}x_3$, $y_2=A_{21}x_1+A_{22}x_2+A_{23}x_3$, $y_3=A_{31}x_1+A_{32}x_2+A_{33}x_3$이며,
-이를 인덱스 노테이션으로 쓰면 $y_i=A_{ij}x_j$입니다.
+\begin{bmatrix}
+A_{11}&A_{12}&A_{13}\\
+A_{21}&A_{22}&A_{23}\\
+A_{31}&A_{32}&A_{33}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\x_2\\x_3
+\end{bmatrix}.
+$$
+
+성분으로 풀어 쓰면
+$y_1=A_{11}x_1+A_{12}x_2+A_{13}x_3$,
+$y_2=A_{21}x_1+A_{22}x_2+A_{23}x_3$,
+$y_3=A_{31}x_1+A_{32}x_2+A_{33}x_3$이며,
+이를 지표 표기로 압축하면 $y_i=A_{ij}x_j$입니다.
+
 
 ---
 
