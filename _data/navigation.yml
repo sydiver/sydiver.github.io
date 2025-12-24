@@ -8,7 +8,7 @@ header:
   - title: About
     url: /about.html
 
-subjects:   
+subjects:
   - title: "복소해석학"
     children:
       - title: "Index"
@@ -18,4 +18,6 @@ subjects:
     children:
       - title: "Index"
         url: /tensor/
+      - title: "Introduction to Tensor"
+        url: /tensor/introduction-to-tensor/
 
