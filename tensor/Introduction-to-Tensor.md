@@ -1,9 +1,11 @@
 ---
 layout: article
-title: "First Note111"
+title: "Introduction to Tensor"
+permalink: /tensor/introduction-to-tensor/
 sidebar:
-  nav: subjects
+  nav: notes
 mathjax: true
+mathjax_autoNumber: true
 ---
 
 공대생이라면 언젠가 **“텐서(tensor)”**라는 말을 듣게 됩니다.  
