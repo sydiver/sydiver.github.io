@@ -439,8 +439,9 @@ $$
 
 먼저 Del operator $\nabla$ Operator를 정의하면, vector caculus가 매우 쉬워집니다.
 
-$$\nabla  := \hat{e_i} \frac {\partial } {\partial x_i} = \hat{e_1} \frac {\partial } {\partial x_1} + \hat{e_2} \frac {\partial } {\partial x_2}
-+ \hat{e_3} \frac {\partial } {\partial x_3} $$ 입니다.  
+$$\nabla  := \hat{e_i} \frac {\partial } {\partial x_i} = \hat{e_1} \frac {\partial } {\partial x_1} + \hat{e_2} \frac {\partial } {\partial x_2} + \hat{e_3} \frac {\partial } {\partial x_3} $$
+
+ 입니다.  
 
 
 ### 6.1) Divergence
