@@ -8,30 +8,12 @@ header:
   - title: About
     url: /about.html
 
-subjects:
-  - title: "선형대수학"
-    children:
-      - title: "Index"
-        url: /linear-algebra/
-      - title: "First Note111"
-        url: /linear-algebra/firstnote/
 
   - title: "복소해석학"
     children:
       - title: "Index"
         url: /complex-analysis/
 
-  - title: "미분기하학"
+  - title: "tensor"
     children:
-      - title: "Index"
-        url: /differential-geometry/
-
-  - title: "C++"
-    children:
-      - title: "Index"
-        url: /cpp/
-
-  - title: "ODE"
-    children:
-      - title: "Index"
-        url: /cpp/
+        url: /tensor/
