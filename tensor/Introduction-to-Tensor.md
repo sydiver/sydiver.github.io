@@ -3,7 +3,7 @@ layout: article
 title: "Introduction to Tensor"
 permalink: /tensor/introduction-to-tensor/
 sidebar:
-  nav: subject
+  nav: subjects
 mathjax: true
 mathjax_autoNumber: true
 ---
