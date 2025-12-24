@@ -374,12 +374,12 @@ $$
 
 ### 4.3) 편미분 표현
 
-$$\partial x_i / \partial x_j  = \delta_{ij}$$ 입니다.
+$$\frac {partial x_i} {\partial x_j}  = \delta_{ij}$$ 입니다.
 
 $i=j$이면 1,
-$i!=j$이면 0이니까 그렇습니다.
+$i \neq j$이면 0이니까 그렇습니다.
 
-이런 스킬은 복잡한 계산에서 매우 유용하게 사용됩니다.
+이런 스킬은 복잡한 계산에서 매우 유용하게 사용되니 그냥 '이런 게 있구나'하고 넘어갑니다.
 
 
 ---
@@ -437,28 +437,111 @@ $$
 
 ## 6. 외적/컬/스칼라 삼중곱을 지표로 쓰기
 
-먼저 $\Delta$ Operator를 정의하면, vector caculus가 매우 쉬워집니다.
+먼저 Del operator $\nabla$ Operator를 정의하면, vector caculus가 매우 쉬워집니다.
+
+$$\nabla  := \hat{e_i} \frac {\partial } {\partial x_i} = \hat{e_1} \frac {\partial } {\partial x_1} + \hat{e_2} \frac {\partial } {\partial x_2}
++ \hat{e_3} \frac {\partial } {\partial x_3} $$ 입니다.  
 
 
-### 1) Cross product (외적)
+### 6.1) Divergence
+
+$u_j = (u_1, u_2, u_3)$인 벡터가 있다고 합시다.
+그리고 각 좌표의 단위벡터를 $\hat{e_j}$라고 합시다.
+
+그러면 1차텐서 $u_j$는 아래와 같이 쓸 수 있겠죠?
+$$u_j = u_1 \hat {e_1} + u_2 \hat {e_2} + u_3 \hat {e_3} = u_j \hat {e_j} $$
+
+> 헷갈린다면 dummy index가 j라는 것을 상기해 보시기 바랍니다.
+
+벡터 u_j의 divergence는 벡터 표기법으로 쓰면 $nabla \cdot \mathbf{u} $입니다.
+이것을 텐서 표기법으로 써봅시다.
+
+별 것 없습니다. 그냥 정의를 그대로 쓰면 됩니다.
+
+$$
+\hat{e_i} \frac {\partial } {\partial x_i} \cdot u_j \hat{e_j}
+$$
+
+여기서 벡터는 $\hat{e_i}$와 $\hat{e_j}$ 밖에 없습니다. $u_j$는 성분이고, $\partial x_i$는 편미분 기호이니까요.
+
+내적연산 $\cdot$은 벡터에만 적용되는 것이죠? 
+따라서 아래와 같이 다시 쓸 수 있습니다.
+
+$$
+\hat{e_i} \frac {\partial } {\partial x_i} \cdot u_j \hat{e_j} = \frac{\partial u_j} {\partial x_i} \hat{e_i} \cdot \hat{e_j}
+$$
+
+$\hat{e_i} \cdot \hat{e_j}$ 부분이 좀 찝집합니다. 
+i = 1,2,3이며 마찬가지로 j = 1,2,3 일 때 
+$$
+\hat{e_1} \cdot \hat{e_2} = 0 
+$$
+
+
+이죠? 반면에 
+
+$$
+\hat{e_1} \cdot \hat{e_1} = 0 
+$$
+입니다.
+
+즉, $i=j$이면 1이고 $i \neq j$이면 0입니다.
+$\delta_{ij}$의 정의와 **정확히 같습니다**.
+
+따라서 
+$$\hat{e_i} \cdot \hat{e_j} = delta_{ij}$$ 입니다.
+
+결국 우리의 목적이었던 divergence 연산은
+
+
+$$
+ \frac{\partial u_j} {\partial x_i} \hat{e_i} \cdot \hat{e_j}
+ = \frac{\partial u_j} {\partial x_i} \delta_{ij}
+$$가 되고, kronecker 연산자의 역할을 상기하여 인덱스를 바꿔봅시다.
+
+ $\delta_{ij}$를 쓰지 않는 대신에 i를 j로 바꿔버리면 된다고 했습니다.
+ 
+ $$
+
+\frac{\partial u_j} {\partial x_i} \delta_{ij}  = \frac{\partial u_j} {\partial x_j}
+
+$$
+
+우리가 기존에 알고 있던 divergence와 일치합니다.
+
+$$\nabla \cdot \mathbf{u} = \frac {\partial u_j} {\partial x_j}$$
+
+헷갈린다면 dummy index를 직접 전개해 보시길 바랍니다.
+
+보통 편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = x_j,j $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
+
+### 6.2) Cross product 
+
+이제 자세한 계산과정은 생략하겠습니다. 
 
 벡터 $\vec a,\vec b$에 대해 외적 $\vec c=\vec a\times \vec b$의 성분은
 
-$$
-c_i = (\vec a \times \vec b)_i = \varepsilon_{ijk} a_j b_k
-$$
-
-로 쓸 수 있습니다.
-
-### 2) Curl (컬)
-
-벡터장 $\vec v(\vec x)$에 대해
+외적, 내적은 **벡터**에 적용하는 것이지 **성분**에 정의되는 연산이 아니라고 했습니다!
 
 $$
-(\nabla \times \vec v)_i = \varepsilon_{ijk}\,\partial_j v_k
-$$
 
-여기서 $\partial_j := \dfrac{\partial}{\partial x_j}$ 입니다.
+a_j\hat{e_j} \times b_j \hat{e_k}
+= a_jb_j \hat{e_j} \times \hat{e_k}
+= a_jb_j \varepsilon_{ijk} \hat{e_i} 
+
+$$ 
+
+> 여기서 $ \hat{e_j} \times \hat{e_k} = \varepsilon_{ijk} \hat{e_i}  $가 헷갈리신다면, 외적의 기하학적 정의와 오른손 법칙을 떠올려보시길 바랍니다. 
+
+
+
+### 6.3) Curl
+
+
+
+
+
+
 
 ### 3) Scalar triple product (스칼라 삼중곱)
 
