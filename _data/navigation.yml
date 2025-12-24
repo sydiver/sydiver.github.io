@@ -8,16 +8,14 @@ header:
   - title: About
     url: /about.html
 
-notes:
+subject:   
   - title: "복소해석학"
     children:
       - title: "Index"
         url: /complex-analysis/
 
-notes:
   - title: "Tensor"
     children:
       - title: "Index"
         url: /tensor/
-      - title: "Introduction"
-        url: /tensor/introduction-to-tensor/
+
