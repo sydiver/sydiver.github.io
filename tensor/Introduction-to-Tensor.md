@@ -179,3 +179,211 @@ A_{ij} = -A_{ji}
 
 이 성질은 나중에 텐서 연산(특히 수축, 내적, 에너지 형태 등)에서  
 불필요한 항을 날려서 계산을 크게 단순화해 줍니다.
+
+---
+
+## Kronecker delta (크로네커 델타)
+
+지표 표기법에서 가장 자주 등장하는 “기본 부품” 중 하나가 **Kronecker delta**입니다.  
+기호는 $\delta_{ij}$로 쓰고, 정의는 다음과 같습니다.
+
+\[
+\delta_{ij} =
+\begin{cases}
+1, & i=j,\\
+0, & i\neq j.
+\end{cases}
+\]
+
+직관적으로는 “인덱스를 서로 같게 맞춰주는 스위치”라고 생각하면 됩니다.
+
+### 1) Identity tensor (단위 텐서)
+
+3차원에서 $\delta_{ij}$는 2차 텐서(행렬)로 보면 곧바로 단위행렬과 같습니다.
+
+\[
+\delta_{ij} \;\;\longleftrightarrow\;\;
+\mathbf I=
+\begin{bmatrix}
+1&0&0\\
+0&1&0\\
+0&0&1
+\end{bmatrix}.
+\]
+
+즉, $\delta_{ij}$는 흔히 **2차 단위 텐서(identity tensor)**라고도 부릅니다.
+
+### 2) 벡터/텐서에 작용: “그대로 돌려준다”
+
+\[
+\delta_{ij} a_j = a_i
+\]
+왜냐하면 $j$에 대해 합이 일어나면서, $i=j$인 성분만 남기 때문입니다.
+(인덱스를 하나 “바꿔 끼우는” 느낌이라고 보면 됩니다.)
+
+더 일반적으로,
+\[
+\delta_{ij} A_{jk} = A_{ik}, \qquad
+A_{ij}\delta_{jk} = A_{ik}.
+\]
+
+### 3) Trace(대각합)와의 관계
+
+\[
+\delta_{ii} = n
+\]
+여기서 $n$은 공간 차원입니다. (3차원이라면 $\delta_{ii}=3$)
+
+또한 2차 텐서 $A_{ij}$의 trace는
+\[
+\mathrm{tr}(\mathbf A)=A_{ii}
+\]
+처럼 인덱스를 수축(contraction)해서 얻습니다.
+
+---
+
+## Permutation tensor (Levi--Civita symbol, 순열 텐서)
+
+외적(cross product), 컬(curl) 같은 3차원 벡터 연산은 지표 표기법으로 쓰면 깔끔해지는데,  
+그 핵심이 바로 **permutation tensor**입니다. 보통 $\varepsilon_{ijk}$로 씁니다.
+
+정의는 다음과 같습니다.
+
+\[
+\varepsilon_{ijk} =
+\begin{cases}
++1, & (i,j,k)\ \text{가 }(1,2,3)\text{의 짝순열(even permutation)}\\
+-1, & (i,j,k)\ \text{가 }(1,2,3)\text{의 홀순열(odd permutation)}\\
+0, & \text{그 외 (즉, 인덱스 중 중복이 있을 때)}
+\end{cases}
+\]
+
+예를 들면
+\[
+\varepsilon_{123}=+1,\qquad
+\varepsilon_{231}=+1,\qquad
+\varepsilon_{312}=+1
+\]
+은 짝순열이라 $+1$이고,
+\[
+\varepsilon_{132}=-1,\qquad
+\varepsilon_{213}=-1,\qquad
+\varepsilon_{321}=-1
+\]
+은 홀순열이라 $-1$입니다.  
+그리고 같은 숫자가 반복되면 0:
+\[
+\varepsilon_{113}=0,\quad \varepsilon_{222}=0.
+\]
+
+### 1) 완전 반대칭 (totally antisymmetric)
+
+$\varepsilon_{ijk}$는 어떤 두 인덱스를 서로 바꾸면 부호가 바뀝니다.
+
+\[
+\varepsilon_{ijk} = -\varepsilon_{jik} = -\varepsilon_{ikj} = \cdots
+\]
+
+그래서 “순열 텐서 = 완전 반대칭 텐서”라고 이해해도 됩니다.
+
+---
+
+## 외적/컬/스칼라 삼중곱을 지표로 쓰기
+
+### 1) Cross product (외적)
+
+벡터 $\vec a,\vec b$에 대해 외적 $\vec c=\vec a\times \vec b$의 성분은
+
+\[
+c_i = (\vec a \times \vec b)_i = \varepsilon_{ijk} a_j b_k
+\]
+
+로 쓸 수 있습니다.
+
+### 2) Curl (컬)
+
+벡터장 $\vec v(\vec x)$에 대해
+\[
+(\nabla \times \vec v)_i = \varepsilon_{ijk}\,\partial_j v_k
+\]
+여기서 $\partial_j := \dfrac{\partial}{\partial x_j}$ 입니다.
+
+### 3) Scalar triple product (스칼라 삼중곱)
+
+\[
+\vec a\cdot(\vec b\times \vec c)
+= \varepsilon_{ijk} a_i b_j c_k.
+\]
+
+---
+
+## Kronecker delta와 permutation tensor의 핵심 항등식
+
+아래 항등식은 외적/컬 계산을 “마법처럼” 단순화해 줍니다.
+
+### 1) 한 번 수축한 항등식
+
+\[
+\varepsilon_{ijk}\varepsilon_{imn}
+=
+\delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km}.
+\]
+
+(가장 자주 쓰는 형태입니다. 외적-외적 전개할 때 거의 무조건 나옵니다.)
+
+### 2) 두 번 수축한 항등식
+
+\[
+\varepsilon_{ijk}\varepsilon_{ijn}
+=
+2\,\delta_{kn}.
+\]
+
+특히 3차원에서만 성립하는 “외적 특유의 단순화”가 여기서 나옵니다.
+
+---
+
+## 예시: $\vec a \times (\vec b \times \vec c)$ 전개가 왜 쉬워지나
+
+삼중 외적 항등식
+\[
+\vec a \times (\vec b \times \vec c)=\vec b(\vec a\cdot\vec c)-\vec c(\vec a\cdot\vec b)
+\]
+도 사실 $\varepsilon$와 $\delta$로 2~3줄이면 정리됩니다.
+
+\[
+\bigl(\vec a \times (\vec b \times \vec c)\bigr)_i
+=
+\varepsilon_{ijk}a_j(\vec b\times \vec c)_k
+=
+\varepsilon_{ijk}a_j(\varepsilon_{kmn}b_m c_n).
+\]
+
+여기서 항등식
+\[
+\varepsilon_{ijk}\varepsilon_{kmn}
+=
+\delta_{im}\delta_{jn}-\delta_{in}\delta_{jm}
+\]
+을 적용하면,
+
+\[
+\bigl(\vec a \times (\vec b \times \vec c)\bigr)_i
+=
+(\delta_{im}\delta_{jn}-\delta_{in}\delta_{jm})a_j b_m c_n
+=
+b_i(a_j c_j) - c_i(a_j b_j).
+\]
+
+즉,
+\[
+\vec a \times (\vec b \times \vec c)=\vec b(\vec a\cdot\vec c)-\vec c(\vec a\cdot\vec b).
+\]
+
+---
+
+> 정리하자면, 
+> - $\delta_{ij}$는 “인덱스를 그대로 통과시키는 단위 텐서”
+> - $\varepsilon_{ijk}$는 “3차원 외적/컬을 인덱스로 쓰게 해주는 완전 반대칭 텐서”
+> - 두 개를 같이 쓰면 외적/컬 같은 복잡한 벡터 연산이 기계적으로 정리됩니다.
+
