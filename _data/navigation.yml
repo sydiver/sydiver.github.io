@@ -30,3 +30,8 @@ subjects:
     children:
       - title: "Index"
         url: /cpp/
+
+  - title: "ODE"
+    children:
+      - title: "Index"
+        url: /cpp/
