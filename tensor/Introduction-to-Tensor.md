@@ -526,12 +526,14 @@ $$\nabla \cdot \mathbf{u} = \frac {\partial u_j} {\partial x_j}$$
 
 $$
 
-a_j\hat{e_j} \times b_j \hat{e_k}
-= a_jb_j \hat{e_j} \times \hat{e_k}
-= a_jb_j \varepsilon_{ijk} \hat{e_i} 
+a_j\hat{e_j} \times b_k \hat{e_k}
+= a_jb_k \hat{e_j} \times \hat{e_k}
+= a_jb_k \varepsilon_{ijk} \hat{e_i} 
 
 $$ 
 
+> 여기서 i는 두번 나와서 dummy index입니다만, 전체적인 변수는 역시 free index인 i라는 것을 생각해 보세요.
+> 무슨 말인지 알겠다면 정말 잘 이해하신 겁니다.
 > 여기서 $ \hat{e_j} \times \hat{e_k} = \varepsilon_{ijk} \hat{e_i}  $가 헷갈리신다면, 외적의 기하학적 정의와 오른손 법칙을 떠올려보시길 바랍니다. 
 
 
@@ -562,7 +564,7 @@ gradient $Phi$는
 
 $$
 \nabla \Phi = (\hat{e_j} \frac{\partial } {\partial x_j}) \Phi
-=  \frac {\Phi} {\partial x_j} \hat{e_j}
+=  \frac {\partial \Phi} {\partial x_j} \hat{e_j}
  = \Phi,j
 $$
 
