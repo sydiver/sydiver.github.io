@@ -664,7 +664,7 @@ $$
 이 식은 7.1에서 증명한 한 번 수축한 항등식의 인덱스 m에 j를 대입하면 됩니다.
 인덱스 i,j 두 개가 겹치죠? 그래서 두 번 수축한 항등식입니다.
 $$
-\varepsilon_{ijk} \varepslion_{ijn} = \delta_{jj}\delta_{kn} - \delta{jn} \delta_{kj} 
+\varepsilon_{ijk} \varepsilon_{ijn} = \delta_{jj} \delta_{kn} - \delta{jn} \delta_{kj} 
 $$
 여기서
 $$
@@ -673,7 +673,7 @@ $$
 따라서 
 $$
 \delta_{jj}\delta_{kn} - \delta_{jn} \delta_{kj}  = 3 \delta_{jn} - \delta_{jn} = 2 \delta_{jn}
-\$$
+$$
 
 특히 3차원에서만 성립하는 **외적 특유의 단순화**가 여기서 나옵니다.
 
