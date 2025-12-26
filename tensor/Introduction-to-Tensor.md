@@ -629,7 +629,7 @@ $$
 그리고 $j=k$이거나 $m=n$이면 levi civita 텐서는 0이 됩니다.
 그럼 $j\neqk, m \neq n$의 경우만 보면 되겠네요.
 
-$j \neq k인 경우에, 세 인덱스 ijk는 모두 서로다른 값이어야 1또는 -1이 됩니다.
+$j \neq k$ 인 경우에, 세 인덱스 ijk는 모두 서로다른 값이어야 1또는 -1이 됩니다.
 $(m,n) = (j,k)$와 같이 순서대로 인덱스가 배열되는 경우에는
 $$
 \varepsilon_{ijk} \varepsilon_{imn} = \varepsilon^2_{ijk} = 1 
@@ -642,9 +642,9 @@ $$
 $$
 
 정리해보면,
-$$(m,n) = (j,k)이면 +1$$
-$$(m,n) = (k,j)이면 -1$$
-$$그 외에는 0$$
+$(m,n) = (j,k)$이면 +1
+$(m,n) = (k,j)$ -1
+그 외에는 $0$
 
 이것을 kronecker delta로 표현하면
 $$ \delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km} $$
