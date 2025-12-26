@@ -130,7 +130,7 @@ $$
 
 ---
 
-## Order (Rank)
+## 2. Order (Rank)
 
 텐서의 **차수(order)** 혹은 **랭크(rank)**에 대해 설명하겠습니다.  
 $n$차원 공간에서 **rank $r$ 텐서**는 보통 $n^r$개의 성분(component)을 가집니다.
@@ -217,7 +217,7 @@ i인덱스는 새로운 $x_1', x_2', x_3'$ 좌표계를 뜻합니다.
 
 ---
 
-## 2. Tensor Algebra
+## 3. Tensor Algebra
 
 텐서는 스칼라, 벡터등을 포함하는 물리량의 일반적인 개념이라고 했습니다.
 당연히 텐서도 물리량이므로 연산할 수 있습니다.
@@ -227,7 +227,7 @@ i인덱스는 새로운 $x_1', x_2', x_3'$ 좌표계를 뜻합니다.
 
 당연히 스칼라 + 벡터는 정의되지 않습니다.
 
-### 2.1) Addition (덧셈)
+### 3.1) Addition (덧셈)
 
 **같은 차수(같은 rank)**의 텐서끼리만 더할 수 있고, 결과도 같은 차수의 텐서가 됩니다.  
 예를 들어
@@ -240,7 +240,7 @@ $$
 
 ---
 
-### 2.2) Multiplication (곱)
+### 3.2) Multiplication (곱)
 
 곱은 종류가 여러 가지가 있는데, 가장 단순한 형태는 **텐서곱**입니다.  
 예를 들어 2차 텐서 $A_{ij}$와 3차 텐서 $B_{rst}$의 외적은
@@ -256,11 +256,11 @@ $$
 
 ---
 
-## 3. Symmetry / Skew-symmetry
+## 4. Symmetry / Skew-symmetry
 
 텐서에서는 인덱스의 위치를 바꿨을 때 성질이 유지되는 경우가 많습니다.
 
-### 3.1) Symmetry (대칭)
+### 4.1) Symmetry (대칭)
 
 예를 들어 4차 텐서 $A_{ijkl}$에 대해
 
@@ -280,7 +280,7 @@ $$
 
 ---
 
-### 3.2) Skew-symmetry (반대칭)
+### 4.2) Skew-symmetry (반대칭)
 
 반대로, 인덱스 두 개를 바꾸면 부호가 바뀌는 경우도 있습니다. 예를 들어
 
@@ -295,7 +295,7 @@ $$
 
 > 반대칭 텐서의 대각성분은 0이 될 수밖에 없다는 것을 생각해보시기 바랍니다.
 
-### 3.3) 대칭텐서와 반대칭텐서의 텐서곱은 0이 된다.
+### 4.3) 대칭텐서와 반대칭텐서의 텐서곱은 0이 된다.
 
 매우 중요한 성질입니다.
 증명도 매우 쉽습니다.
@@ -329,7 +329,7 @@ $$
 
 ---
 
-## 4. Kronecker delta (크로네커 델타)
+## 5. Kronecker delta (크로네커 델타)
 
 지표 표기법에서 가장 자주 등장하는 “기본 부품” 중 하나가 **Kronecker delta**입니다.  
 기호는 $\delta_{ij}$로 쓰고, 정의는 다음과 같습니다.
@@ -344,7 +344,7 @@ $$
 
 직관적으로는 “인덱스를 바꾸는 역할” 정도로 생각해 둡시다.
 
-### 4.1) Identity tensor (단위 텐서)
+### 5.1) Identity tensor (단위 텐서)
 
 3차원에서 $\delta_{ij}$는 2차 텐서(행렬)로 보면 곧바로 단위행렬과 같습니다.
 
@@ -360,7 +360,7 @@ $$
 
 즉, $\delta_{ij}$는 흔히 **2차 단위 텐서(identity tensor)**라고도 부릅니다.
 
-### 4.2) 벡터/텐서에 작용: "substitution property”
+### 5.2) 벡터/텐서에 작용: "substitution property”
 
 Kronecker delta는 i와 j인덱스가 같을 때만 1이 되고,
 다르면 0이 된다고 했습니다.
@@ -398,7 +398,7 @@ $$
 A_{ij}\delta_{jk} = A_{ik}.
 $$
 
-### 4.3) 편미분 표현
+### 5.3) 편미분 표현
 
 $$\frac {partial x_i} {\partial x_j}  = \delta_{ij}$$ 입니다.
 
@@ -410,7 +410,7 @@ $i \neq j$이면 0이니까 그렇습니다.
 
 ---
 
-## 5. Permutation tensor (Levi--Civita symbol, 순열 텐서)
+## 6. Permutation tensor (Levi-Civita symbol, 순열 텐서)
 
 외적(cross product), 컬(curl) 같은 3차원 벡터 연산은 지표 표기법으로 쓰면 깔끔해지는데,  
 그 핵심이 바로 **permutation tensor**입니다. 보통 $\varepsilon_{ijk}$로 씁니다.
@@ -449,7 +449,7 @@ $$
 \varepsilon_{113}=0,\quad \varepsilon_{222}=0.
 $$
 
-### 5.1) levi-civita 텐서는 반대칭이다 
+### 6.1) levi-civita 텐서는 반대칭이다 
 
 $\varepsilon_{ijk}$는 어떤 두 인덱스를 서로 바꾸면 부호가 바뀝니다.
 
@@ -461,7 +461,7 @@ $$
 
 ---
 
-## 6. 외적/컬/스칼라 삼중곱을 텐서 표기법으로 쓰기
+## 7. 외적/컬/스칼라 삼중곱을 텐서 표기법으로 쓰기
 
 먼저 Del operator $\nabla$ Operator를 정의하면, vector caculus가 매우 쉬워집니다.
 
@@ -470,7 +470,7 @@ $$\nabla  := \hat{e_i} \frac {\partial } {\partial x_i} = \hat{e_1} \frac {\part
  입니다.  
 
 
-### 6.1) Divergence
+### 7.1) Divergence
 
 $u_j = (u_1, u_2, u_3)$인 벡터가 있다고 합시다.
 그리고 각 좌표의 단위벡터를 $\hat{e_j}$라고 합시다.
@@ -543,7 +543,7 @@ $$\nabla \cdot \mathbf{u} = \frac {\partial u_j} {\partial x_j}$$
 
 편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = x_{j,j} $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
 
-### 6.2) Cross product 
+### 7.2) Cross product 
 
 이제 자세한 계산과정은 생략하겠습니다. 
 
@@ -564,7 +564,7 @@ $$
 
 
 
-### 6.3) Curl
+### 7.3) Curl
 이번에도 그냥 정의대로 쭉 붙여서 쓰면 됩니다.
 
 $$
@@ -582,7 +582,7 @@ $$
  마찬가지로 헷갈리신다면 직접 전개해 보시길 추천드립니다.
 
 
-### 6.4) Gradient
+### 7.4) Gradient
 
 0차텐서(스칼라) $Phi$에 대하여
 gradient $Phi$는
@@ -611,13 +611,13 @@ $$
 
 ---
 
-## 7. Kronecker delta와 permutation tensor의 핵심 항등식
+## 8. Kronecker delta와 permutation tensor의 핵심 항등식
 
 이제 진짜 거의 다 왔습니다. 
 
 아래 항등식은 외적을 단순화해 줍니다. 정신 건강상 외워두면 좋지만 그래도 증명은 한 번 하고 갑시다.
 
-### 7.1) 한 번 수축한 항등식
+### 8.1) 한 번 수축한 항등식
 
 $$
 \varepsilon_{ijk}\varepsilon_{imn}
@@ -653,7 +653,7 @@ $$ \delta_{jm}\delta_{kn}-\delta_{jn}\delta_{km} $$
 
 (가장 자주 쓰는 형태입니다. 외적-외적 전개할 때 거의 무조건 나옵니다.)
 
-### 7.2) 두 번 수축한 항등식
+### 8.2) 두 번 수축한 항등식
 
 $$
 \varepsilon_{ijk}\varepsilon_{ijn}
