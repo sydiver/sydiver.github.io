@@ -13,4 +13,4 @@ mathjax: true
 - Email: sydiver95@snu.ac.kr
 
 ### Youtube
- www.youtube.com/@expiwt
+ www.youtube.com/@sydiver
