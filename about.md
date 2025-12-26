@@ -5,14 +5,12 @@ permalink: /about.html
 show_edit_on_github: true
 mathjax: true
 ---
-## Cho Sungyoon (조성윤)
 
-- Naval Architecture & Ocean Engineering
-- Topics: multiphase flow, bubble dynamics, wall interaction, OpenFOAM, experiments
+## Cho Sungyoon (조성윤)
+- Topics: Fluid dynamics, Computational Fluid Dynamics, Engineering math,
 
 ### Contact
-- GitHub: `https://github.com/YOUR_GITHUB_ID`
-- Email: (add here)
+- Email: sydiver95@snu.ac.kr
 
-### Example equation
-$$\nabla \cdot \mathbf{u} = 0$$
+### Youtube
+ www.youtube.com/@expiwt
