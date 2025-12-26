@@ -207,7 +207,7 @@ $y_3=A_{31}x_1+A_{32}x_2+A_{33}x_3$이며,
 $$j -> i $$ 와 같이 인덱스가 **변환된** 것이죠.
 이것은 좌표축이 변하는 원리와 같습니다. 
 
-!(_/assets/images/tensor1.png_)
+![A tensor remains the same under a change of coordinate system](/assets/images/tensor1.png)
 
 위의 그림에서 기존의 인덱스 j는 $x_1, x_2, x_3$좌표계였다면
 i인덱스는 새로운 $x_1', x_2', x_3'$ 좌표계를 뜻합니다.
