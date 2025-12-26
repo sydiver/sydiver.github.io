@@ -1,23 +1,17 @@
 header:
   - title: Home
     url: /
-  - title: Archive
-    url: /archive.html
-  - title: Projects
-    url: /projects/
   - title: About
     url: /about.html
 
 subjects:
   - title: "복소해석학"
     children:
-      - title: "Index"
-        url: /complex-analysis/
+
 
   - title: "Tensor"
     children:
-      - title: "Index"
-        url: /tensor/
+
       - title: "Introduction to Tensor"
         url: /tensor/introduction-to-tensor/
 
