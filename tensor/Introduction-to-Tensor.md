@@ -46,7 +46,7 @@ $$
 
 ### 1.1) Free index (자유 인덱스)
 
-**free index n차원 텐서의 변수를 모두 함축하고 있는, 즉 변수 그 자체의 역할을 하는 인덱스**입니다.  
+**free index는 n차원 텐서의 성분을 모두 함축하며, 변수 그 자체의 역할을 하는 인덱스**입니다.  
 
 
 예를 들어 3차원 공간에서 $x_i$라고 쓰면, 여기서 $i$는 free index입니다.  
@@ -93,9 +93,9 @@ $$A_{ij}B_{ij} = A_{1j}B_{1j} + A_{2j}B_{2j} + A_{3j}B_{3j} $$
 
 $$
 = A_{1j}B_{1j} + A_{2j}B_{2j} + A_{3j}B_{3j}
-=  ( A_{11}B_{11} + + A_{12}B_{12} + A_{13}B_{13}  )
-+ ( A_{21}B_{21} + + A_{22}B_{22} + A_{23}B_{23}  )
-+ ( A_{31}B_{31} + + A_{32}B_{32} + A_{33}B_{33}  )
+=  ( A_{11}B_{11}  + A_{12}B_{12} + A_{13}B_{13}  )
++ ( A_{21}B_{21}  + A_{22}B_{22} + A_{23}B_{23}  )
++ ( A_{31}B_{31}  + A_{32}B_{32} + A_{33}B_{33}  )
 $$
 
 
@@ -386,7 +386,7 @@ i는 free index이니 3차원에서의 방향(기저)를 의미한다고 했죠?
 $$
 \delta_{i1} a_1 =  ( \delta_{11} a_1 ,  \delta_{21} a_1 , \delta_{31} a_1) 
 $$
-그럼 kroncecker delta의 정의에 따라, 위의 세 성분 중 $\delta_{11} a_1 $만 살아남겠죠.
+그럼 kronecker delta의 정의에 따라, 위의 세 성분 중 $\delta_{11} a_1 $만 살아남겠죠.
 그것은 곧 $a_1$과 같습니다.
 따라서 $\delta_{ij} a_j = a_i$가 되는 것이죠. 
 
@@ -541,7 +541,7 @@ $$\nabla \cdot \mathbf{u} = \frac {\partial u_j} {\partial x_j}$$
 
 헷갈린다면 dummy index를 직접 전개해 보시길 바랍니다.
 
-편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = x_{j,j} $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
+편미분 기호를 계속 쓰기 귀찮으니까 $$ \frac {\partial u_j} {\partial x_j} = u_{j,j} $$ 와 같이 쉼표를 찍고 표기하기도 합니다.
 
 ### 7.2) Cross product 
 
@@ -584,8 +584,8 @@ $$
 
 ### 7.4) Gradient
 
-0차텐서(스칼라) $Phi$에 대하여
-gradient $Phi$는
+0차텐서(스칼라) $\Phi$에 대하여
+gradient $\Phi$는
 
 
 $$
@@ -672,7 +672,7 @@ $$
 $$
 따라서 
 $$
-\delta_{jj}\delta_{kn} - \delta_{jn} \delta_{kj}  = 3 \delta_{jn} - \delta_{jn} = 2 \delta_{jn}
+\delta_{jj}\delta_{kn} - \delta_{jn} \delta_{kj}  = 3 \delta_{kn} - \delta_{kn} = 2 \delta_{kn}
 $$
 
 특히 3차원에서만 성립하는 **외적 특유의 단순화**가 여기서 나옵니다.
@@ -726,12 +726,14 @@ $$
 = \vec b(\vec a\cdot\vec c)-\vec c(\vec a\cdot\vec b).
 $$
 
+이 계산이 가능한 이유는
+Levi-Civita 텐서가 외적의 기하학적 구조를 그대로 담고 있기 때문입니다.
 ---
 
 > 정리하자면,  
 > - $\delta_{ij}$는 “인덱스를 그대로 통과시키는 단위 텐서”  
 > - $\varepsilon_{ijk}$는 “3차원 외적/컬을 인덱스로 쓰게 해주는 완전 반대칭 텐서”  
-> - 두 개를 같이 쓰면 외적/컬 같은 복잡한 벡터 연산을 쉽게 할 수 있습니다.
+> - 두 개를 같이 쓰면 복잡한 벡터 연산을 쉽게 할 수 있습니다.
 
 {% include comments.html %}
 
