@@ -6,8 +6,8 @@ show_edit_on_github: true
 mathjax: true
 ---
 
-## Cho Sungyoon (조성윤)
-- Topics: Fluid Dynamics,  Engineering math
+## Topics
+ - Fluid Dynamics,  Engineering math
 
 ### Contact
 - Email: sydiver95@snu.ac.kr
