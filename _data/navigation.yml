@@ -19,5 +19,5 @@ subjects:
       - title: "Introduction to Tensor"
         url: /tensor/introduction-to-tensor/
       - title: "Tensor의 좌표 독립성"
-        url: /tensor/Tensor-02/
+        url: /tensor/why-einstein-notation-is-coordinate-free/
 
