@@ -21,3 +21,5 @@ subjects:
       - title: "Tensor의 좌표 독립성"
         url: /tensor/why-einstein-notation-is-coordinate-free/
 
+      - title: "연습문제"
+        url: /tensor/index-notation-examples/
