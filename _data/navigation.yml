@@ -18,4 +18,6 @@ subjects:
 
       - title: "Introduction to Tensor"
         url: /tensor/introduction-to-tensor/
+      - title: "Tensor의 좌표 독립성"
+        url: /tensor/Tensor의 좌표독립성/
 
