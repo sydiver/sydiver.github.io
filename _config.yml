@@ -55,3 +55,12 @@ collections:
   linear-algebra:
     output: true
     permalink: /linear-algebra/:path/
+
+
+header:
+  nav:
+    - title: Home
+      url: /
+    - title: Notes
+      url: /archive/
+
