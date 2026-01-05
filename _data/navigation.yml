@@ -9,7 +9,7 @@ subjects:
   - title: "미분방정식"
     children:
       - title: "Wronskian 행렬식"
-        url: /tensor/wronskian/
+        url: /tensor/Wronskian/
 
 
   - title: "유체역학"
