@@ -136,11 +136,9 @@ q^{-1}=\frac{q^*}{|q|^2}.
 $$
 
 특히
-$$ 
-
-\left\| q \right\|=1 
-
-$$ 
+$$
+|q| = 1
+$$
 
 와 같이 unit quaternion 이면
 
