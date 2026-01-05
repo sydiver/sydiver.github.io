@@ -6,6 +6,8 @@ sidebar:
   nav: subjects
 ---
 
+## Copyrights Sungyoon Cho
+All videos and figures below are from my own experiments and CFD simulations.
 
 ## Computational Fluid Dynamics
 
