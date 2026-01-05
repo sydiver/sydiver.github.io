@@ -152,7 +152,7 @@ $$
 
 ## 4. Rotation operator : $L_q(v)=qvq^*$
 
-이제 진짜 하고 싶은 말을 합시다. Quarternion은 **3차원 회전**을 아주 우아하게 표현하는 방법입니다.
+이제 진짜 하고 싶은 말을 합시다. Quaternion은 **3차원 회전**을 아주 우아하게 표현하는 방법입니다.
 
 3D 벡터 $\mathbf{v}\in\mathbb{R}^3$를 quaternion으로 올릴 때는 \\
 실수부를 0으로 만들어서
