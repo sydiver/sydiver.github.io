@@ -15,19 +15,14 @@ subjects:
       - title: "Wronskian 행렬식"
         url: /tensor/Wronskian/
 
-
-  - title: "유체역학"
-    children:
-    
-  - title: "복소해석학"
-    children:
-
-
   - title: "Tensor"
     children:
-
       - title: "Introduction to Tensor"
         url: /tensor/introduction-to-tensor/
       - title: "Tensor의 좌표 독립성"
         url: /tensor/why-einstein-notation-is-coordinate-free/
 
+  - title: "선형대수"
+    children:
+      - title: "Quarternion"
+        url: /tensor/quarternion/
