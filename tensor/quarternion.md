@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Euler angle ↔ Quaternion (회전 정리)"
+title: "Quaternion (사원수)"
 permalink: /tensor/quaternion/
 sidebar:
   nav: subjects
@@ -11,12 +11,12 @@ mathjax_autoNumber: true
 ## 주의
 아래 개념이 익숙하지 않으면 읽다가 헷갈릴 수 있습니다.
 
-선형대수학 - 직교행렬, 역행렬, 내적/외적 \\
-기하학 - 회전축(axis), 회전각(angle) \\
+선형대수학 - 직교행렬, 역행렬, 내적/외적, 회전행렬 \\
+기하학 - 회전축(axis), 회전각(angle)  \\
 벡터해석 - dot product, cross product
 
 이 글의 목표는 간단합니다. \\
-**행렬로 회전을 하던 걸(quaternion 없이), quaternion으로도 똑같이 할 수 있다**는 걸 확인하는 겁니다.
+**행렬로 회전을 하던 걸(quaternion 없이), 복소수의 확장판(?) 격인 quaternion (사원수)로도 똑같이 할 수 있다**는 걸 확인하는 겁니다.
 
 ---
 
