@@ -24,5 +24,5 @@ subjects:
 
   - title: "선형대수"
     children:
-      - title: "Quarternion"
+      - title: "Quaternion"
         url: /tensor/quaternion/
