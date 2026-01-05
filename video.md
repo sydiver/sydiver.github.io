@@ -8,7 +8,7 @@ sidebar:
 
 
 
-![Uploading air bubble rising.gif…]()
+![air-bubble-rising](https://github.com/user-attachments/assets/1407deb8-be1b-4207-9f85-8b4e5fdefe01)
 
 ![output_video](https://github.com/user-attachments/assets/80637f5b-74c5-4bee-9fe2-f5918b93a44b)
 
