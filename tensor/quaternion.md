@@ -83,7 +83,7 @@ $$
 이면
 
 $$
-pq=
+\mathbf{pq}=
 \Big(
 p_0q_0-\mathbf{p}\cdot\mathbf{q},\ 
 p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}
@@ -92,7 +92,11 @@ $$
 
 헷갈리면 직접 전개해보면 됩니다. (근데 귀찮으니까 보통 이걸 외웁니다)
 
----
+여기서 중요한 점은, 서로다른 사원수를 곱한 결과는 여전히 사원수라는 것입니다.
+
+자세한 증명은 문서 마지막에 있는 pdf 파일을 참조하시기 바랍니다.
+
+--
 
 ## 3. Conjugate / norm / inverse
 사원수는 복소수의 확장판(?) 이므로 복소수와 유사하게 conjugate, norm, inverse를 정의할 수 있습니다.
