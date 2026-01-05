@@ -379,6 +379,8 @@ $$
 
 입니다.
 
+[quarternion.pdf](https://github.com/user-attachments/files/24426729/quarternion.pdf)
+
 
 
 {% include comments.html %}
