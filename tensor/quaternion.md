@@ -388,6 +388,12 @@ $$
 
 [quarternion.pdf](https://github.com/user-attachments/files/24426729/quarternion.pdf)
 
+<iframe
+  src="quarternion.pdf#view=FitH"
+  width="100%"
+  height="900px"
+  style="border: 1px solid #ddd; border-radius: 8px;"
+></iframe>
 
 
 {% include comments.html %}
