@@ -103,10 +103,11 @@ $$
 
 그림으로 봅시다.
 
-<figure style="text-align:center;">
-  <img src="wronskian.bmp" alt="Wronskian 행렬이 0인 경우" width="700">
-  <figcaption>그림 1. Wronskian이 0이면 공간이 한 직선으로 눌려 합쳐진다.</figcaption>
-</figure>
+
+<p align="center">
+  <img src="wronskian.bmp" alt="Wronskian 행렬식이 0인 경우">
+</p>
+
 
 여기서
 **Input space (입력공간)**: 왼쪽 그림입니다. 변환하기 전의 벡터 $x$들을 놓고 보는 공간입니다.
