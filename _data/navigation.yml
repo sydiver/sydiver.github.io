@@ -25,4 +25,4 @@ subjects:
   - title: "선형대수"
     children:
       - title: "Quarternion"
-        url: /tensor/quarternion/
+        url: /tensor/quaternion/
