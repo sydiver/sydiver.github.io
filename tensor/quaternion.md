@@ -159,9 +159,9 @@ $$
 그럼 음수가 붙은 내적이 하나 나오겠네요. 그리고 단위벡터의 곱은 오른손법칙을 따르는 외적과 같습니다.
 그러면 양수가 붙은 외적이 하나 나오겠네요.
 따라서
-$$
-\vec{p} \vec{q} = -\vec{p} \codt \vec{q} + \vec{p} \times \vec{q}
 
+$$
+\vec{p} \vec{q} = -\vec{p} \cdo \vec{q} + \vec{p} \times \vec{q}
 $$
 
 
@@ -169,8 +169,7 @@ $$
 
 $$
 = p_0q_0 - \vec{p}\cdot\vec{q} + \vec{p} \times \vec{q} + p_0\vec{q} + q_0\vec{p}
-
-$$$
+$$
 
 
 
@@ -212,20 +211,20 @@ $$
 
 아까 연산을 떠올려보면 음수가 붙은 내적, 양수가 붙은 외적이 하나 나왔었죠?
 $$
-\vec{q} \vec{q} = -\vec{q} \codt \vec{q} + \vec{q} \times \vec{q}
+\vec{q} \vec{q} = -\vec{q} \cdot \vec{q} + \vec{q} \times \vec{q}
 $$
 
 따라서
 
 $$
 q^*q = (q_0 - \vec{q})(q_0 + \vec{q}) = q_0^2 + q_0\vec{q} - q_0\vec{q} - \vec{q}\vec{q}
-= q_0^2 + q_0 \vec{q} - q_0 \vec{q} + \vec{q} \codt \vec{q} - \vec{q} \times \vec{q}
+= q_0^2 + q_0 \vec{q} - q_0 \vec{q} + \vec{q} \cdot \vec{q} - \vec{q} \times \vec{q}
 $$
 
 서로 상쇄하여 없어지는 항이 있고, 또 같은 벡터의 외적은 0입니다. 따라서
 
 $$
-q^*q = q_0^2 + \vec{q} \codt \vec{q} 
+q^*q = q_0^2 + \vec{q} \cdot \vec{q} 
 = q_0^2 + q_1^2 + q_2^2 + q_3^2
 $$
 
@@ -275,8 +274,9 @@ $$ 이므로
 
 $$
 q_0^2 + |\vec{q}|^2 = 1 
-$$ 
-이 되네요? (벡터 \vec{q}의 norm $|\vec{q}| = \sqrt{q_1^2 + q_2^2 + q_3^2$ 이니까요)
+$$
+
+이 되네요? (벡터 $\vec{q}$의 norm $|\vec{q}| = \sqrt{q_1^2 + q_2^2 + q_3^2$ 이니까요)
 
 여기서 어떤 각도 $\theta$가 존재하여, $\cos^2\theta = q_0^2$, $\sin^2\theta = |\vec{q}|^2$를 만족한다고 둡시다.
 그러면 unit quaternion은 아래와 같이 쓸 수 있습니다.
@@ -305,13 +305,13 @@ $q=(q_0,\mathbf{q})$, $v=(0,\mathbf{v})$라고 하고 \\
 
 $$
 L_q(\vec{v}) = q\vec{v}q^*
-             = (q_0 + \vec{q})( 0 _ \vec{v}) q^*
-             = ( - \vec{q} \cdot \vec{v} + \vec{q} \ times \vec{v} + q_0 \vec{v}) (q_0 - \vec{q})
+             = (q_0 + \vec{q})( 0 +  \vec{v}) q^*
+             = ( - \vec{q} \cdot \vec{v} + \vec{q} \times \vec{v} + q_0 \vec{v}) (q_0 - \vec{q})
 $$
 
 
 $$
-= (\vec{q} \codt \vec{v})q_0 - (\vec{q} \times \vec{v} + q_0\vec{v}) \cdot (-\vec{q})
+= (\vec{q} \cdot \vec{v})q_0 - (\vec{q} \times \vec{v} + q_0\vec{v}) \cdot (-\vec{q})
  + (\vec{q} \times \vec{v}) \times (-\vec{q}) + q_0(\vec{q} \times \vec{v} + q_0\vec{v})
  + (\vec{q} \cdot \vec{v}) \vec{q}
 = q_0^2 \vec{v} + q_0(\vec{q} \times \vec{v}) - q_0(\vec{v} \times \vec{q}) + (\vec{q} \cdot \vec{v}) \vec{q}
@@ -320,6 +320,10 @@ $$
 
 $$
 
+(솔직히 이부분은 그냥 받아들이고 넘기셔도 이해하는 데 문제 없습니다...)
+
+결론만 말하자면 quaternion과 그 conjugate를 양 옆에 곱해서
+새로 얻은 벡터 $\vec{v}'$는
 
 $$
 \mathbf{v}'
@@ -372,8 +376,8 @@ $$
 
 ### THM 1
 For any unit quaternion $q$, $q = cos \frac{\theta}{2} + \vec{u} sin \frac{\theta}{2}$ ,
-and any \vec{v} \in \mathbb{R}^3, the action q\vec{v}q* is a rotation of \vec{v} by angle \theta
-about axis \vec{u}.
+and any $\vec{v} \in \mathbb{R}^3$, the action $q\vec{v}q*$ is a rotation of $\vec{v}$ by angle $\theta$
+about axis $\vec{u}$.
 
 <img width="601" height="607" alt="화면 캡처 2026-01-06 041301" src="https://github.com/user-attachments/assets/c86030c1-11d0-499f-8dbd-a5a691af152f" />
 
