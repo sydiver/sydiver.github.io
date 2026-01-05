@@ -135,7 +135,14 @@ $$
 q^{-1}=\frac{q^*}{|q|^2}.
 $$
 
-특히 $|q|=1$ (unit quaternion)이면
+특히
+$$ 
+
+|q|=1 
+
+$$ 
+
+와 같이 unit quaternion 이면
 
 $$
 q^{-1}=q^*
