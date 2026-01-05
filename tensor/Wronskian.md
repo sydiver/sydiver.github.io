@@ -104,10 +104,7 @@ $$
 
 그림으로 봅시다.
 
-
-<p align="center">
-  <img src="wronskian.bmp" alt="Wronskian 행렬식이 0인 경우">
-</p>
+![Wronskian 행렬식이 0인 경우](wronskian.bmp) 
 
 
 여기서
