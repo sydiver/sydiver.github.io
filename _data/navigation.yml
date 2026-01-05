@@ -7,8 +7,10 @@ header:
 subjects:
 
   - title: "미분방정식"
-      title : "Wronskian 행렬식"
-      url: /tensor/Wronskian/
+    children:
+      - title: "Wronskian 행렬식"
+        url: /tensor/wronskian/
+
 
   - title: "유체역학"
     children:
