@@ -6,6 +6,7 @@ show_edit_on_github: true
 mathjax: true
 ---
 
+## Sungyoon Cho (조성윤)
 <img src="https://github.com/user-attachments/assets/de59385e-085f-4b88-81b7-fa8b53e0a665"
      alt="조성윤_증명사진"
      width="120">
