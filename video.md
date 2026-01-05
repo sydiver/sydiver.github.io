@@ -6,6 +6,8 @@ sidebar:
   nav: subjects
 ---
 
-<video controls muted playsinline width="720">
-  <source src="air-bubble-rising.mp4" type="video/mp4">
-</video>
+
+https://github.com/user-attachments/assets/a2334250-8e8c-4666-bdc5-dc6f729dc747
+
+
+
