@@ -26,3 +26,18 @@ subjects:
     children:
       - title: "Quaternion"
         url: /tensor/quaternion/
+
+  - title: "수치해석"
+    children:
+      - title: "Steepest Gradient Method"
+        url: 
+      - title: "Conjugate Gradient Method"
+        url: 
+      - title: "Euler Method (IVP)"
+        url: 
+      - title: "Modified Euler Method (IVP)"
+        url: 
+       - title: "4th Runge-Kutta Method (IVP)"
+        url:       
+
+        
