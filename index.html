@@ -1,11 +1,23 @@
 ---
-layout: home
+layout: article
+title: "유체노트"
+permalink: /
 sidebar:
   nav: subjects
-title: "Home"
-articles:
-  excerpt_type: html
-  show_excerpt: true
-  show_readmore: true
-show_edit_on_github: true
 ---
+
+유체/수학 노트입니다.  
+실험 영상과 CFD 결과도 같이 올립니다.
+
+- **Projects / Video**: [/video/](/video/)
+- **About**: [/about.html](/about.html)
+
+---
+
+## Recent
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+
