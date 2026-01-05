@@ -16,7 +16,8 @@ mathjax_autoNumber: true
 벡터해석 - dot product, cross product
 
 이 글의 목표는 간단합니다. \\
-**행렬로 회전을 하던 걸(quaternion 없이), 복소수의 확장판(?) 격인 quaternion (사원수)로도 똑같이 할 수 있다**는 걸 확인하는 겁니다.
+**회전행렬을 곱해서 벡터를 회전시킬 수도 있지만(Euler Rotation) 복소수의 확장판(?) 
+격인 quaternion (사원수)로도 똑같이 할 수 있다**는 걸 확인하는 겁니다.
 
 ---
 
