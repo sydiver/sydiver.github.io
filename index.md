@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "유체역학노트"
+title: "A+ 유체역학노트"
 permalink: /
 sidebar:
   nav: subjects
