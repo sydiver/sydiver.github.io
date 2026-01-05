@@ -7,12 +7,12 @@ sidebar:
 mathjax: true
 mathjax_autoNumber: true
 ---
-
+## 정의
 Wronskian 행렬식 $W(x)$는 n개의 함수
 $$y_1(x), y_2(x) , ... y_n(x)$$가 있을 때
 $$W(y_1, y_2 , \cdots, y_n)(x) = \begin{vmatrix}
-y_1(x) & y_2(x) & /cdots & y_n(x) \\
-y_1(x) & y_2(x) & /cdots & y_n(x) \\
+y_1(x) & y_2(x) & \cdots & y_n(x) \\
+y_1(x) & y_2(x) & \cdots & y_n(x) \\
 \vdots & \vdots & \ddots & \vdots\\
 y_1^{(n-1)}(x) & y_2^{(n-1)}(x) & \cdots & y_n^{(n-1)}(x)
 \end{vmatrix}$$
@@ -35,12 +35,12 @@ $$
 y'' + p(x) y' + q(x) y = 0
 $$
 
-1. Two solutions $y_1$, $y_2$ are linearly **dependent** on interval I
+1. Two solutions $y_1$, $y_2$ are linearly **dependent** on interval $I$
   iff $W(y_1, y_2) = 0$ at some $x* \in I$
 2. If  $W(y_1, y_2) = 0$ at some $x* \in I$,
-   then $W(y_1, y_2) = 0$ on total I
+   then $W(y_1, y_2) = 0$ on total $I$
 3. If $W(y_1, y_2) \neq 0$ at some $x* \in I$,
-   then $y_1$, $y_2$ are linearly **independent** on total I
+   then $y_1$, $y_2$ are linearly **independent** on total $I$
 
 길게 썼지만, 어떤 구간 I에 속하는 특정한 값 $x*$에서 Wronskian이 0이기만 하면, 모든 구간에서 0이고
 0이 아니면, 모든 구간에서 선형독립이라는 것입니다. 또 주의할 점은 $y_1(x)$, $y_2(x)$는 **모두 선형 미분방정식의 해**라는 것입니다.
@@ -93,9 +93,37 @@ $$
 
 그림으로 봅시다.
 
-그림으로 봅시다.
-
 ![Wronskian 행렬이 0인 경우](wronskian.bmp)
+여기서
+**Input space (입력공간)**: 왼쪽 그림입니다. 변환하기 전의 벡터 $x$들을 놓고 보는 공간입니다.
+**Output space (출력공간)**: 오른쪽 그림입니다. 변환 후의 벡터 $Ax$들이 놓이는 공간입니다.
+
+- $e_1, e_2$: 입력공간의 표준기저 벡터입니다.
+  $$
+  e_1=\begin{pmatrix}1\\0\end{pmatrix},\qquad
+  e_2=\begin{pmatrix}0\\1\end{pmatrix}.
+  $$
+  오른쪽에서 $Ae_1$, $Ae_2$는 각각 $e_1, e_2$가 변환된 결과입니다.
+
+- $v_1, v_2$: 입력공간에서 서로 다른 두 벡터입니다. (왼쪽에서 서로 다른 위치의 점/표식)
+  오른쪽에서는 이 둘의 변환 결과 $Av_1$, $Av_2$를 찍었습니다.
+
+- $n$: $An=0$을 만족하는 영공간(null space) 방향 벡터입니다.  
+  이 방향으로는 입력을 움직여도 출력이 변하지 않습니다.
+
+- $\alpha$: $n$ 방향으로 얼마나 이동할지를 정하는 실수입니다.
+
+그림에서 $v_2$는
+$$
+v_2 := v_1 + \alpha n
+$$
+로 잡았기 때문에, $v_1\neq v_2$임에도 불구하고
+$$
+Av_2 = A(v_1+\alpha n)=Av_1+\alpha(An)=Av_1
+$$
+가 되어 출력공간에서 두 점이 같은 위치로 **겹쳐 보입니다**.  
+즉, 서로 다른 입력이 같은 출력으로 합쳐지기 때문에 유일한 역변환을 가질 수 없습니다.
+
 
 우리가 하고 싶은 말은 간단합니다.  
 **열(또는 행)이 선형종속인 행렬로 선형변환을 하면, 2차원 공간이 어떤 1차원 공간(직선)으로 눌려서 합쳐진다**는 것이죠.
@@ -162,7 +190,8 @@ $$
 결국 이런 행렬은 변환 자체는 가능하지만, 출력만 보고 원래 입력을 되찾으려 하면 후보가 너무 많아져서  
 **유일한 역변환이 존재할 수 없습니다.** (정보가 한 방향에서 겹쳐져서 사라졌기 때문이죠)
 
-##결론
+## 결론
+
 정리하자면 선형 미분방정식의 해 $y_1(x)$, $y_2(x)$에 대하여 Wronskian 행렬식 $W(y_1, y_2)(x)$를 정의하였고
 $$
 W(y_1, y_2)(x*) = 0 
