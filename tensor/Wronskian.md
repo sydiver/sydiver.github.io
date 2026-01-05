@@ -12,7 +12,7 @@ Wronskian 행렬식 $W(x)$는 n개의 함수
 $$y_1(x), y_2(x) , ... y_n(x)$$가 있을 때
 $$W(y_1, y_2 , \cdots, y_n)(x) = \begin{vmatrix}
 y_1(x) & y_2(x) & \cdots & y_n(x) \\
-y_1(x) & y_2(x) & \cdots & y_n(x) \\
+y_1'(x) & y_2'(x) & \cdots & y_n'(x) \\
 \vdots & \vdots & \ddots & \vdots\\
 y_1^{(n-1)}(x) & y_2^{(n-1)}(x) & \cdots & y_n^{(n-1)}(x)
 \end{vmatrix}$$
@@ -70,7 +70,7 @@ $$
 식을 다시 써보자면 아래와 같은 꼴이 될 겁니다.
 
 $$
-W(y_1, y_2)(x*) = y_1(x*) \cross y_2'(x*) - y_2(x*) \times y_1'(x*)
+W(y_1, y_2)(x*) = y_1(x*) \times y_2'(x*) - y_2(x*) \times y_1'(x*)
 $$
 
 분모가 0이 아닌 경우에 한해서 아래와 같이 정리할 수 있습니다.
@@ -93,7 +93,11 @@ $$
 
 그림으로 봅시다.
 
-![Wronskian 행렬이 0인 경우](wronskian.bmp)
+<figure style="text-align:center;">
+  <img src="wronskian.bmp" alt="Wronskian 행렬이 0인 경우" width="700">
+  <figcaption>그림 1. Wronskian이 0이면 공간이 한 직선으로 눌려 합쳐진다.</figcaption>
+</figure>
+
 여기서
 **Input space (입력공간)**: 왼쪽 그림입니다. 변환하기 전의 벡터 $x$들을 놓고 보는 공간입니다.
 **Output space (출력공간)**: 오른쪽 그림입니다. 변환 후의 벡터 $Ax$들이 놓이는 공간입니다.
@@ -195,11 +199,16 @@ $$
 정리하자면 선형 미분방정식의 해 $y_1(x)$, $y_2(x)$에 대하여 Wronskian 행렬식 $W(y_1, y_2)(x)$를 정의하였고
 $$
 W(y_1, y_2)(x*) = 0 
-$$이라는 것은 정방행렬의 행렬식이 0이라는 것입니다.
+$$
+
+이라는 것은 정방행렬의 행렬식이 0이라는 것입니다.
 즉, 역행렬이 없는 singular한 행렬이고, 그들의 column과 row가 선형 종속이라는 것입니다.
+따라서 $y_1(x)$와 $y_2(x)$는 선형 종속입니다.
 
-
-
-
+반대로
+$$
+W(y_1, y_2)(x*) \neq 0 
+$$
+이라면 $y_1(x)$와 $y_2(x)$는 선형 독립입니다.
 
 {% include comments.html %}
