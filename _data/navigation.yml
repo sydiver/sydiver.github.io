@@ -6,6 +6,10 @@ header:
 
 subjects:
 
+  - title: "미분방정식"
+      title : "Wronskian 행렬식"
+      url: /tensor/Wronskian/
+
   - title: "유체역학"
     children:
     
