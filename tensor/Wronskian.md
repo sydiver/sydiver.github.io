@@ -7,6 +7,12 @@ sidebar:
 mathjax: true
 mathjax_autoNumber: true
 ---
+
+## 주의
+선형대수학 -  null space, rank, determinant 및 \\
+미분방정식 - 2계 선형 미분방정식, 일반해에 대하여 잘 모르는 상태에서 읽으면 바보처럼 느껴질 수 있습니다.
+
+
 ## 정의
 Wronskian 행렬식 $W(x)$는 n개의 함수
 $$y_1(x), y_2(x) , ... y_n(x)$$가 있을 때
